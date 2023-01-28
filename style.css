@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 4rem;
+  padding-top: 2rem;
+  height: 100vh;
+  background-color: beige;
+}
+.coolTitle {
+  /* text-align: center; */
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px rgb(177, 177, 177);
+    position: static;
+}
+.done {
+  text-decoration: line-through;
+}
+li {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+#delete {
+  margin-left: 8px;
+}
