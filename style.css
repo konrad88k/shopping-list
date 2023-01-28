@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  padding: 4rem;
-  padding-top: 2rem;
+  padding: 8rem;
+  padding-top: 4rem;
   height: 100vh;
-  background-color: beige;
+  background-color: rgb(255, 249, 214);
 }
 .coolTitle {
   /* text-align: center; */
@@ -26,11 +26,36 @@ body {
 }
 .done {
   text-decoration: line-through;
+  color:rgba(116, 158, 93, 0.774)
+}
+ul {
+  padding-left: 2rem;
+  margin-top: 2rem;
 }
 li {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  display: list-item;
+  display: inline-block;
+  cursor: pointer;
 }
 #delete {
-  margin-left: 8px;
+  margin-left: 12px;
+  height: 22px;
+  width: 60px;
+  text-align: center;
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  border: 1px solid tomato;
+  cursor: pointer;
+  color: tomato;
+}
+#delete:hover {
+  opacity: 0.3;
+}
+h3 {
+  padding-left: 2rem;
+}
+#userinput {
+  width: 250px;
 }
