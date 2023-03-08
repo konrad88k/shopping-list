@@ -88,11 +88,25 @@ ul {
   margin-top: 2rem;
 }
 li {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
   margin-bottom: 12px;
-  display: list-item;
-  display: inline-block;
   cursor: pointer;
+}
+#done-checkbox {
+  margin-right: 1rem;
+  align-self: first baseline;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  outline: none;
+  border: 0;
+}
+li p {
+  flex-grow: 1;
+  text-align: left;
+  max-width: 259px;
 }
 #delete {
   position: relative;
@@ -103,11 +117,13 @@ li {
   text-align: center;
   background-color:rgba(255, 255, 255, 0.5);
   border-radius: 12px;
-  border: 1px solid rgb(168, 16, 44);
+  border-width: 1px;
   cursor: pointer;
-  color: rgb(168, 16, 44);
   opacity: 0.3;
+  align-self: first baseline;
 }
 #delete:hover {
   opacity: 1;
+  border: 1px solid rgb(168, 16, 44);
+  color: rgb(168, 16, 44);
 }
