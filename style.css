@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
 * {
   margin: 0px;
@@ -19,9 +20,11 @@ body {
   background-blend-mode: multiply;
 }
 .container-wrap {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  height: 100%;
+  /* padding-top: 4rem; */
+  /* padding-bottom: 4rem; */
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  min-height: 84vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,11 +39,15 @@ body {
 }
 .date {
   text-align: center;
+  position: static;
   font-size: 36px;
+}
+.date, .date sup {
+  font-family: 'Calistoga', cursive;
   font-weight: 600;
   line-height: 3rem;
-  position: static;
-  color: rgb(47, 47, 47);
+  /* color: rgb(47, 47, 47); */
+  color: #2a0b0e;
 }
 h3 {
   text-align: center;
@@ -68,6 +75,18 @@ h3 {
 #userinput:focus {
   border-color: rgb(65, 198, 167);
 }
+::placeholder {
+  color: #ccc;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #ccc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #ccc;
+}
 #enter-btn {
   padding: 0.5rem 1.5rem;
   cursor: pointer;
@@ -94,20 +113,6 @@ li {
   margin-bottom: 12px;
   cursor: pointer;
 }
-#done-checkbox {
-  margin-right: 1rem;
-  align-self: first baseline;
-  cursor: pointer;
-  width: 22px;
-  height: 22px;
-  outline: none;
-  border: 0;
-}
-li p {
-  flex-grow: 1;
-  text-align: left;
-  max-width: 259px;
-}
 #delete {
   position: relative;
   right: 0px;
@@ -124,6 +129,6 @@ li p {
 }
 #delete:hover {
   opacity: 1;
-  border: 1px solid rgb(168, 16, 44);
-  color: rgb(168, 16, 44);
+  border: 1px solid rgb(138, 13, 44);
+  color: rgb(138, 13, 44);
 }
