@@ -35,13 +35,18 @@
 
 /* On mouse-over, add a grey background color */
 .checkbox-container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #ddd;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:active input ~ .checkmark {
+  background-color: #eee;
 }
 
 /* When the checkbox is checked, add a blue background */
-/* .checkbox-container input:checked ~ .checkmark {
-  background-color: #2196F3;
-} */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: rgba(255,255,255,0);
+}
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
