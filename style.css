@@ -1,35 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
 body {
   margin: 0;
-  padding: 8rem;
-  padding-top: 4rem;
-  height: 100vh;
-  background-color: rgb(255, 249, 214);
+  /* padding: 8rem;
+  padding-top: 4rem; */
+  /* height: 100vh; */
+  background-color: white;
+  background-image: url("bg-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
-.coolTitle {
-  /* text-align: center; */
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 40px;
-  letter-spacing: 4px;
-  word-spacing: -8px;
-  color: tomato;
-  text-shadow: 
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px 20px 40px rgb(177, 177, 177);
-    position: static;
+.container-wrap {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  /* margin-top: 2rem; */
+  width: 360px;
+  padding: 2rem 3rem;
+  background-color: rgba(255, 255, 255, 0.57);
+  border-radius: 2rem;
+  backdrop-filter: blur(6px);
+}
+.date {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 3rem;
+  position: static;
+  color: rgb(47, 47, 47);
+}
+h3 {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: rgb(40, 187, 153);
+  letter-spacing: 1px;
+}
+.input-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-wrapper * {
+  padding: 0.5rem 1rem;
+  border: solid rgb(202, 202, 202) 1px;
+  border-radius: 8px;
+}
+#userinput {
+  width: 250px;
+  margin-right: 4px;
+  outline: none !important;
+}
+#userinput:focus {
+  border-color: rgb(65, 198, 167);
+}
+#enter-btn {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+#enter-btn:hover {
+  color: rgb(65, 198, 167);
+  border-color: rgb(65, 198, 167);
+}
+#enter-btn:active {
+  opacity: 0.5;
 }
 .done {
   text-decoration: line-through;
-  color:rgba(116, 158, 93, 0.774)
+  color:rgba(182, 182, 182, 0.774)
 }
 ul {
-  padding-left: 2rem;
+  width: 100%;
   margin-top: 2rem;
 }
 li {
@@ -40,22 +95,19 @@ li {
   cursor: pointer;
 }
 #delete {
+  position: relative;
+  right: 0px;
   margin-left: 12px;
   height: 22px;
   width: 60px;
   text-align: center;
   background-color:rgba(255, 255, 255, 0.5);
   border-radius: 12px;
-  border: 1px solid tomato;
+  border: 1px solid rgb(168, 16, 44);
   cursor: pointer;
-  color: tomato;
-}
-#delete:hover {
+  color: rgb(168, 16, 44);
   opacity: 0.3;
 }
-h3 {
-  padding-left: 2rem;
-}
-#userinput {
-  width: 250px;
+#delete:hover {
+  opacity: 1;
 }

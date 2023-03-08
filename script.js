@@ -1,5 +1,5 @@
 // INITIAL VARIABLES
-var button = document.getElementById("enter");
+var button = document.getElementById("enter-btn");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var liList = document.querySelectorAll("li");
