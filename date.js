@@ -2,14 +2,12 @@ const n = new Date();
 const y = n.getFullYear();
 const m = n.getMonth() + 1;
 const d = n.getDate();
-const day = new Date(n.getDate());
-const month = new Date(n.getDate());
 
 const dayArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const monthArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-const dayName = dayArr[day.getDay()];
-const monthName = monthArr[month.getMonth()];
+const dayName = dayArr[n.getDay()];
+const monthName = monthArr[m];
 
 switch (d % 10) {
     case 1: nth = "st";
