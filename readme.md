@@ -10,6 +10,7 @@
 + submit by pushing enter or clicking 'Add' button
 + delete task by clicking 'delete' button
 + cross out task by clicking it or tick the checkbox
++ [to do] save task (same list after refreshing page)
 
 ## Build and deploy
 
