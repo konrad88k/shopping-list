@@ -1,4 +1,17 @@
-# [>> ToDo list <<](https://konrad88k.github.io/todo-list/)
-1. Type and push enter button to add new item.
-2. Click on the list item to cross it out. 
-3. Click delete button to delete item next to it.
+# [ToDo list](https://konrad88k.github.io/todo-list/)
+
+## Layout
+- header (actual day/time)
+- input field + 'Add' button
+- list of tasks (checkbox + task + 'delete' button)
+- nice looking background
+
+## In-app functions
++ submit by pushing enter or clicking 'Add' button
++ delete task by clicking 'delete' button
++ cross out task by clicking it or tick the checkbox
+
+## Build and deploy
+
+- Build with vanilla Javascript
+- Deploy with GitHub Pages or Netlify.
